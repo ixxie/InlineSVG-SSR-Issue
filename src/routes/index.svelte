@@ -9,6 +9,6 @@
 <h1>Great failure!</h1>
 
 <figure>
-	<InlineSVG src='../static/test.svg'/>
+	<InlineSVG src='../test.svg'/>
 	<figcaption>Behold - error!</figcaption>
 </figure>
