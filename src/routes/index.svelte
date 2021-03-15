@@ -1,14 +1,12 @@
 <script>
-    import InlineSVG from 'svelte-inline-svg'
+  import InlineSVG from 'svelte-inline-svg'
+
+  const openmoji = require('openmoji')
+  const om = openmoji.openmojis
+    
+  let src = om[5].openmoji_images.color.svg
 </script>
 
-<svelte:head>
-	<title>InlineSVG SSR Issue</title>
-</svelte:head>
+<p>{src}</p>
 
-<h1>Great failure!</h1>
-
-<figure>
-	<InlineSVG src='../test.svg'/>
-	<figcaption>Behold - error!</figcaption>
-</figure>
+<InlineSVG src={src}/>
